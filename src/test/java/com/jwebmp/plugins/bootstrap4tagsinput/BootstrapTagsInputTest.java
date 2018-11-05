@@ -20,10 +20,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.jwebmp.plugins.bootstraptagsinput;
+package com.jwebmp.plugins.bootstrap4tagsinput;
 
 import com.jwebmp.core.Page;
-import com.jwebmp.plugins.bootstrap.forms.BSForm;
+import com.jwebmp.plugins.bootstrap4.forms.BSForm;
 import org.junit.jupiter.api.Test;
 
 /**

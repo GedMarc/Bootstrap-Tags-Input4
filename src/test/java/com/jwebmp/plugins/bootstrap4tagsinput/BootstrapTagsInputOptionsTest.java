@@ -1,4 +1,4 @@
-package com.jwebmp.plugins.bootstraptagsinput;
+package com.jwebmp.plugins.bootstrap4tagsinput;
 
 import org.junit.jupiter.api.Test;
 

@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.jwebmp.plugins.bootstraptagsinput;
+package com.jwebmp.plugins.bootstrap4tagsinput;
 
 import com.jwebmp.core.base.html.inputs.InputTextType;
 import com.jwebmp.core.plugins.ComponentInformation;
