@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.jwebmp.plugins.bootstrap4tagsinput;
+package com.jwebmp.plugins.bs4.tagsinput;
 
 import com.jwebmp.core.Feature;
 import com.jwebmp.core.base.ComponentHierarchyBase;
@@ -29,17 +29,17 @@ import static com.jwebmp.core.utilities.StaticStrings.*;
  * @author GedMarc
  * @since 09 Jun 2017
  */
-public class BootstrapTagsInputFeature
-		extends Feature<GlobalFeatures, BootstrapTagsInputOptions, BootstrapTagsInputFeature>
+public class BS4TagsInputFeature
+		extends Feature<GlobalFeatures, BS4TagsInputOptions, BS4TagsInputFeature>
 {
 
 
 	/*
-	 * Constructs a new BootstrapTagsInputFeature
+	 * Constructs a new BS4TagsInputFeature
 	 */
-	public BootstrapTagsInputFeature(ComponentHierarchyBase component)
+	public BS4TagsInputFeature(ComponentHierarchyBase component)
 	{
-		super("BootstrapTagsInputFeature", component);
+		super("BS4TagsInputFeature", component);
 	}
 
 	@Override
@@ -54,11 +54,11 @@ public class BootstrapTagsInputFeature
 	 * @return
 	 */
 	@Override
-	public BootstrapTagsInputOptions getOptions()
+	public BS4TagsInputOptions getOptions()
 	{
 		if (super.getOptions() == null)
 		{
-			setOptions(new BootstrapTagsInputOptions());
+			setOptions(new BS4TagsInputOptions());
 		}
 		return super.getOptions();
 	}

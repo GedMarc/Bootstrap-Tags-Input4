@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.jwebmp.plugins.bootstrap4tagsinput;
+package com.jwebmp.plugins.bs4.tagsinput;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
@@ -29,7 +29,7 @@ import java.util.List;
  * @author GedMarc
  * @since 09 Jun 2017
  */
-public class BootstrapTagsInputOptions
+public class BS4TagsInputOptions
 		extends JavaScriptPart
 {
 
@@ -37,7 +37,7 @@ public class BootstrapTagsInputOptions
 	/**
 	 * Classname for the tags, or a function returning a classname
 	 */
-	private BootstrapTagsInputSize tagClass;
+	private BS4TagsInputSize tagClass;
 	/**
 	 * When adding objects as tags, itemValue must be set to the name of the property containing the item's value, or a function returning an item's value.
 	 */
@@ -80,7 +80,7 @@ public class BootstrapTagsInputOptions
 	 */
 	private Boolean freeInput;
 	@JsonProperty("typeahead")
-	private BootstrapTagsInputOptionsTypeAheadValues typeAhead;
+	private BS4TagsInputOptionsTypeAheadValues typeAhead;
 	/**
 	 * Boolean value controlling whether form submissions get processed when pressing enter in a field converted to a tagsinput (default: false).
 	 */
@@ -89,7 +89,7 @@ public class BootstrapTagsInputOptions
 	/**
 	 * Constructs a new tags input options object
 	 */
-	public BootstrapTagsInputOptions()
+	public BS4TagsInputOptions()
 	{
 		//Nothing Needed
 	}
@@ -99,7 +99,7 @@ public class BootstrapTagsInputOptions
 	 *
 	 * @return
 	 */
-	public BootstrapTagsInputSize getTagClass()
+	public BS4TagsInputSize getTagClass()
 	{
 		return tagClass;
 	}
@@ -111,7 +111,7 @@ public class BootstrapTagsInputOptions
 	 *
 	 * @return
 	 */
-	public BootstrapTagsInputOptions setTagClass(BootstrapTagsInputSize tagClass)
+	public BS4TagsInputOptions setTagClass(BS4TagsInputSize tagClass)
 	{
 		this.tagClass = tagClass;
 		return this;
@@ -134,7 +134,7 @@ public class BootstrapTagsInputOptions
 	 *
 	 * @return
 	 */
-	public BootstrapTagsInputOptions setItemValue(String itemValue)
+	public BS4TagsInputOptions setItemValue(String itemValue)
 	{
 		this.itemValue = itemValue;
 		return this;
@@ -185,7 +185,7 @@ public class BootstrapTagsInputOptions
 	 *
 	 * @return
 	 */
-	public BootstrapTagsInputOptions setConfirmKeys(List<Integer> confirmKeys)
+	public BS4TagsInputOptions setConfirmKeys(List<Integer> confirmKeys)
 	{
 		this.confirmKeys = confirmKeys;
 		return this;
@@ -210,7 +210,7 @@ public class BootstrapTagsInputOptions
 	 *
 	 * @return
 	 */
-	public BootstrapTagsInputOptions setMaxTags(Integer maxTags)
+	public BS4TagsInputOptions setMaxTags(Integer maxTags)
 	{
 		this.maxTags = maxTags;
 		return this;
@@ -233,7 +233,7 @@ public class BootstrapTagsInputOptions
 	 *
 	 * @return
 	 */
-	public BootstrapTagsInputOptions setMaxChars(Integer maxChars)
+	public BS4TagsInputOptions setMaxChars(Integer maxChars)
 	{
 		this.maxChars = maxChars;
 		return this;
@@ -256,7 +256,7 @@ public class BootstrapTagsInputOptions
 	 *
 	 * @return
 	 */
-	public BootstrapTagsInputOptions setTrimValue(Boolean trimValue)
+	public BS4TagsInputOptions setTrimValue(Boolean trimValue)
 	{
 		this.trimValue = trimValue;
 		return this;
@@ -279,7 +279,7 @@ public class BootstrapTagsInputOptions
 	 *
 	 * @return
 	 */
-	public BootstrapTagsInputOptions setAllowDuplicates(Boolean allowDuplicates)
+	public BS4TagsInputOptions setAllowDuplicates(Boolean allowDuplicates)
 	{
 		this.allowDuplicates = allowDuplicates;
 		return this;
@@ -302,7 +302,7 @@ public class BootstrapTagsInputOptions
 	 *
 	 * @return
 	 */
-	public BootstrapTagsInputOptions setFocusClass(String focusClass)
+	public BS4TagsInputOptions setFocusClass(String focusClass)
 	{
 		this.focusClass = focusClass;
 		return this;
@@ -329,7 +329,7 @@ public class BootstrapTagsInputOptions
 	 *
 	 * @return
 	 */
-	public BootstrapTagsInputOptions setFreeInput(Boolean freeInput)
+	public BS4TagsInputOptions setFreeInput(Boolean freeInput)
 	{
 		this.freeInput = freeInput;
 		return this;
@@ -342,11 +342,11 @@ public class BootstrapTagsInputOptions
 	 *
 	 * @return
 	 */
-	public BootstrapTagsInputOptionsTypeAheadValues getTypeAhead()
+	public BS4TagsInputOptionsTypeAheadValues getTypeAhead()
 	{
 		if (typeAhead == null)
 		{
-			typeAhead = new BootstrapTagsInputOptionsTypeAheadValues();
+			typeAhead = new BS4TagsInputOptionsTypeAheadValues();
 		}
 		return typeAhead;
 	}
@@ -360,7 +360,7 @@ public class BootstrapTagsInputOptions
 	 *
 	 * @return
 	 */
-	public BootstrapTagsInputOptions setTypeAhead(BootstrapTagsInputOptionsTypeAheadValues typeAhead)
+	public BS4TagsInputOptions setTypeAhead(BS4TagsInputOptionsTypeAheadValues typeAhead)
 	{
 		this.typeAhead = typeAhead;
 		return this;
@@ -383,7 +383,7 @@ public class BootstrapTagsInputOptions
 	 *
 	 * @return
 	 */
-	public BootstrapTagsInputOptions setCancelConfirmKeysOnEmpty(Boolean cancelConfirmKeysOnEmpty)
+	public BS4TagsInputOptions setCancelConfirmKeysOnEmpty(Boolean cancelConfirmKeysOnEmpty)
 	{
 		this.cancelConfirmKeysOnEmpty = cancelConfirmKeysOnEmpty;
 		return this;

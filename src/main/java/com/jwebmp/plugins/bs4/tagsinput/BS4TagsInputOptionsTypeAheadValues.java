@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.jwebmp.plugins.bootstrap4tagsinput;
+package com.jwebmp.plugins.bs4.tagsinput;
 
 import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
@@ -28,7 +28,7 @@ import java.util.List;
  * @author GedMarc
  * @since 10 Jun 2017
  */
-public class BootstrapTagsInputOptionsTypeAheadValues
+public class BS4TagsInputOptionsTypeAheadValues
 		extends JavaScriptPart
 {
 
@@ -41,9 +41,9 @@ public class BootstrapTagsInputOptionsTypeAheadValues
 	private List<String> source;
 
 	/*
-	 * Constructs a new BootstrapTagsInputOptionsTypeAheadValues
+	 * Constructs a new BS4TagsInputOptionsTypeAheadValues
 	 */
-	public BootstrapTagsInputOptionsTypeAheadValues()
+	public BS4TagsInputOptionsTypeAheadValues()
 	{
 		//Nothing needed
 	}

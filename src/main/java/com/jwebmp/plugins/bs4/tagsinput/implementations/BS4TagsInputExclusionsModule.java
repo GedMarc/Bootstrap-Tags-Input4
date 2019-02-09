@@ -1,4 +1,4 @@
-package com.jwebmp.plugins.bootstrap4tagsinput.implementations;
+package com.jwebmp.plugins.bs4.tagsinput.implementations;
 
 import com.jwebmp.guicedinjection.interfaces.IGuiceScanJarExclusions;
 import com.jwebmp.guicedinjection.interfaces.IGuiceScanModuleExclusions;
@@ -7,9 +7,9 @@ import javax.validation.constraints.NotNull;
 import java.util.HashSet;
 import java.util.Set;
 
-public class BootstrapTags4InputExclusionsModule
-		implements IGuiceScanModuleExclusions<BootstrapTags4InputExclusionsModule>,
-				           IGuiceScanJarExclusions<BootstrapTags4InputExclusionsModule>
+public class BS4TagsInputExclusionsModule
+		implements IGuiceScanModuleExclusions<BS4TagsInputExclusionsModule>,
+				           IGuiceScanJarExclusions<BS4TagsInputExclusionsModule>
 {
 
 	@Override

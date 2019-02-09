@@ -15,52 +15,35 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package com.jwebmp.plugins.bootstrap4tagsinput;
 
+import com.jwebmp.core.Page;
+import com.jwebmp.plugins.bs4.tagsinput.BS4TagsInputFeature;
+import org.junit.jupiter.api.Test;
+
 /**
- * Bootstrap Tags Input Size
- *
  * @author GedMarc
- * @since 10 Jun 2017
  */
-public enum BootstrapTagsInputSize
+public class BS4TagsInputFeatureTest
+
 {
-	/**
-	 * Have large tag inputs
-	 */
-	Big,
-	/**
-	 * Have small tag inputs
-	 */
-	Small;
-	/**
-	 * Any sub data
-	 */
-	private String data;
 
-	/**
-	 * A new BootstrapTagsInputSize
-	 */
-	BootstrapTagsInputSize()
+	public BS4TagsInputFeatureTest()
 	{
-
 	}
 
-	/**
-	 * Returns the name or the data contained within
-	 *
-	 * @return
-	 */
-	@Override
-	public String toString()
+	@Test
+	public void testSomeMethod()
 	{
-		if (data != null && !data.isEmpty())
-		{
-			return data;
-		}
-		else
-		{
-			return name().toLowerCase();
-		}
+		BS4TagsInputFeature bsf = new BS4TagsInputFeature(new Page().getBody());
+		bsf.getOptions()
+		   .setItemText("New Value");
+		System.out.println(bsf.renderJavascript());
 	}
+
 }

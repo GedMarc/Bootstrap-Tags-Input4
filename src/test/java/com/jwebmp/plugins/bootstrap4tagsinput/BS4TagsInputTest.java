@@ -24,16 +24,17 @@ package com.jwebmp.plugins.bootstrap4tagsinput;
 
 import com.jwebmp.core.Page;
 import com.jwebmp.plugins.bootstrap4.forms.BSForm;
+import com.jwebmp.plugins.bs4.tagsinput.BS4TagsInput;
 import org.junit.jupiter.api.Test;
 
 /**
  * @author GedMarc
  */
-public class BootstrapTagsInputTest
+public class BS4TagsInputTest
 
 {
 
-	public BootstrapTagsInputTest()
+	public BS4TagsInputTest()
 	{
 	}
 
@@ -41,7 +42,7 @@ public class BootstrapTagsInputTest
 	@SuppressWarnings("unchecked")
 	public void testSomeMethod()
 	{
-		BootstrapTagsInput bs = new BootstrapTagsInput();
+		BS4TagsInput bs = new BS4TagsInput();
 		bs.getOptions()
 		  .setFreeInput(true);
 		System.out.println(bs.toString(true));
@@ -51,7 +52,7 @@ public class BootstrapTagsInputTest
 	@SuppressWarnings("unchecked")
 	public void testSomeMethod2()
 	{
-		BootstrapTagsInput bs = new BootstrapTagsInput();
+		BS4TagsInput bs = new BS4TagsInput();
 		bs.getOptions()
 		  .setMaxTags(8);
 		bs.getOptions()
@@ -65,7 +66,7 @@ public class BootstrapTagsInputTest
 	@SuppressWarnings("unchecked")
 	public void testJavaScript()
 	{
-		BootstrapTagsInput bs = new BootstrapTagsInput();
+		BS4TagsInput bs = new BS4TagsInput();
 		bs.getOptions()
 		  .setFreeInput(true);
 		System.out.println(bs.renderJavascript());
@@ -77,7 +78,7 @@ public class BootstrapTagsInputTest
 	{
 		Page p = new Page();
 		BSForm form = new BSForm();
-		BootstrapTagsInput bs = new BootstrapTagsInput();
+		BS4TagsInput bs = new BS4TagsInput();
 		p.getOptions()
 		 .setDynamicRender(false);
 		p.getBody()

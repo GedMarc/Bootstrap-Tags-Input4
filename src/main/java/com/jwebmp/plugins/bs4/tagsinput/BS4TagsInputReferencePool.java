@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.jwebmp.plugins.bootstrap4tagsinput;
+package com.jwebmp.plugins.bs4.tagsinput;
 
 import com.jwebmp.core.base.references.CSSReference;
 import com.jwebmp.core.base.references.JavascriptReference;
@@ -28,11 +28,11 @@ import com.jwebmp.core.base.servlets.interfaces.ReferencePool;
  * @author GedMarc
  * @since 09 Jun 2017
  */
-enum BootstrapTagsInputReferencePool
+enum BS4TagsInputReferencePool
 		implements ReferencePool
 {
-	BootstrapTagsInput(new JavascriptReference("BootstrapTagsInput", 2.3, "bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.js"),
-	                   new CSSReference("BootstrapTagsInput", 2.3, "bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.css"));
+	BootstrapTagsInput(new JavascriptReference("BS4TagsInput", 2.3, "bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.js"),
+	                   new CSSReference("BS4TagsInput", 2.3, "bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.css"));
 	/**
 	 * Any sub data
 	 */
@@ -43,12 +43,12 @@ enum BootstrapTagsInputReferencePool
 	/**
 	 * A new AngularSlimScrollReferencePool
 	 */
-	BootstrapTagsInputReferencePool()
+	BS4TagsInputReferencePool()
 	{
 
 	}
 
-	BootstrapTagsInputReferencePool(JavascriptReference javaScriptReference, CSSReference cssReference)
+	BS4TagsInputReferencePool(JavascriptReference javaScriptReference, CSSReference cssReference)
 	{
 		this.javaScriptReference = javaScriptReference;
 		if (this.javaScriptReference != null)

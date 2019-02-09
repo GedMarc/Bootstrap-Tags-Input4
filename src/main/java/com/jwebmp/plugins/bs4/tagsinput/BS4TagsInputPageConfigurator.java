@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.jwebmp.plugins.bootstrap4tagsinput;
+package com.jwebmp.plugins.bs4.tagsinput;
 
 import com.jwebmp.core.Page;
 import com.jwebmp.core.plugins.PluginInformation;
@@ -42,9 +42,9 @@ import javax.validation.constraints.NotNull;
 		pluginIconUrl = "",
 		pluginIconImageUrl = "",
 		pluginOriginalHomepage = "https://bootstrap-tagsinput.github.io/bootstrap-tagsinput/examples/",
-		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/BootstrapTagsInput.jar/download")
-public class BootstrapTagsInputPageConfigurator
-		implements IPageConfigurator<BootstrapTagsInputPageConfigurator>
+		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/BS4TagsInput.jar/download")
+public class BS4TagsInputPageConfigurator
+		implements IPageConfigurator<BS4TagsInputPageConfigurator>
 {
 	/**
 	 * If this configurator is enabled
@@ -52,9 +52,9 @@ public class BootstrapTagsInputPageConfigurator
 	private static boolean enabled = true;
 
 	/*
-	 * Constructs a new BootstrapTagsInputPageConfigurator
+	 * Constructs a new BS4TagsInputPageConfigurator
 	 */
-	public BootstrapTagsInputPageConfigurator()
+	public BS4TagsInputPageConfigurator()
 	{
 		//Nothing needed
 	}
@@ -68,7 +68,7 @@ public class BootstrapTagsInputPageConfigurator
 	 */
 	public static boolean isEnabled()
 	{
-		return BootstrapTagsInputPageConfigurator.enabled;
+		return BS4TagsInputPageConfigurator.enabled;
 	}
 
 	/**
@@ -81,20 +81,20 @@ public class BootstrapTagsInputPageConfigurator
 	 */
 	public static void setEnabled(boolean mustEnable)
 	{
-		BootstrapTagsInputPageConfigurator.enabled = mustEnable;
+		BS4TagsInputPageConfigurator.enabled = mustEnable;
 	}
 
 	@NotNull
 	@Override
 	public Page configure(Page page)
 	{
-		if (!page.isConfigured())
+		if (!page.isConfigured() && enabled())
 		{
 			JQueryPageConfigurator.setRequired(true);
 			page.getBody()
-			    .addJavaScriptReference(BootstrapTagsInputReferencePool.BootstrapTagsInput.getJavaScriptReference());
+			    .addJavaScriptReference(BS4TagsInputReferencePool.BootstrapTagsInput.getJavaScriptReference());
 			page.getBody()
-			    .addCssReference(BootstrapTagsInputReferencePool.BootstrapTagsInput.getCssReference());
+			    .addCssReference(BS4TagsInputReferencePool.BootstrapTagsInput.getCssReference());
 		}
 		return page;
 	}
@@ -102,6 +102,6 @@ public class BootstrapTagsInputPageConfigurator
 	@Override
 	public boolean enabled()
 	{
-		return BootstrapTagsInputPageConfigurator.enabled;
+		return BS4TagsInputPageConfigurator.enabled;
 	}
 }

@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.jwebmp.plugins.bootstrap4tagsinput;
+package com.jwebmp.plugins.bs4.tagsinput;
 
 import com.jwebmp.core.base.html.inputs.InputTextType;
 import com.jwebmp.core.plugins.ComponentInformation;
@@ -32,20 +32,20 @@ import java.util.Objects;
 @ComponentInformation(name = "Bootstrap Tags Input",
 		description = "jQuery plugin providing a Twitter Bootstrap user interface for managing tags",
 		url = "https://github.com/GedMarc/JWebMP-Bootstrap-Tags-Input")
-public class BootstrapTagsInput
-		extends InputTextType<BootstrapTagsInput>
+public class BS4TagsInput
+		extends InputTextType<BS4TagsInput>
 {
 
 
 	/**
 	 * The feature for this select
 	 */
-	private BootstrapTagsInputFeature feature;
+	private BS4TagsInputFeature feature;
 
 	/*
-	 * Constructs a new BootstrapTagsInput
+	 * Constructs a new BS4TagsInput
 	 */
-	public BootstrapTagsInput()
+	public BS4TagsInput()
 	{
 		addFeature(getFeature());
 	}
@@ -55,11 +55,11 @@ public class BootstrapTagsInput
 	 *
 	 * @return
 	 */
-	public BootstrapTagsInputFeature getFeature()
+	public BS4TagsInputFeature getFeature()
 	{
 		if (feature == null)
 		{
-			feature = new BootstrapTagsInputFeature(this);
+			feature = new BS4TagsInputFeature(this);
 		}
 		return feature;
 	}
@@ -69,13 +69,13 @@ public class BootstrapTagsInput
 	 *
 	 * @param feature
 	 */
-	public void setFeature(BootstrapTagsInputFeature feature)
+	public void setFeature(BS4TagsInputFeature feature)
 	{
 		this.feature = feature;
 	}
 
 	@Override
-	public BootstrapTagsInputOptions getOptions()
+	public BS4TagsInputOptions getOptions()
 	{
 		return getFeature().getOptions();
 	}
@@ -93,7 +93,7 @@ public class BootstrapTagsInput
 		{
 			return true;
 		}
-		if (!(o instanceof BootstrapTagsInput))
+		if (!(o instanceof BS4TagsInput))
 		{
 			return false;
 		}
@@ -101,7 +101,7 @@ public class BootstrapTagsInput
 		{
 			return false;
 		}
-		BootstrapTagsInput that = (BootstrapTagsInput) o;
+		BS4TagsInput that = (BS4TagsInput) o;
 		return Objects.equals(getFeature(), that.getFeature());
 	}
 }

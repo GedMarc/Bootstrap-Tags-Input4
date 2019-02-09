@@ -1,9 +1,3 @@
-import com.jwebmp.core.services.IPageConfigurator;
-import com.jwebmp.guicedinjection.interfaces.IGuiceScanJarExclusions;
-import com.jwebmp.guicedinjection.interfaces.IGuiceScanModuleExclusions;
-import com.jwebmp.plugins.bootstrap4tagsinput.BootstrapTagsInputPageConfigurator;
-import com.jwebmp.plugins.bootstrap4tagsinput.implementations.BootstrapTags4InputExclusionsModule;
-
 module com.jwebmp.plugins.bootstrap4tagsinput {
 	exports com.jwebmp.plugins.bootstrap4tagsinput;
 
