@@ -38,6 +38,14 @@
             <groupId>com.jwebmp.plugins.bootstrap</groupId>
             <artifactId>jwebmp-bootstrap</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.jwebmp.core</groupId>
+            <artifactId>jwebmp-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.jwebmp.guicedee</groupId>
+            <artifactId>guiced-injection</artifactId>
+        </dependency>
     </dependencies>
 
     <scm>
