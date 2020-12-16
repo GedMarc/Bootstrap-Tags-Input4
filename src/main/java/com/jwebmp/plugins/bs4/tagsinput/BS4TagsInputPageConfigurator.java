@@ -19,6 +19,7 @@ package com.jwebmp.plugins.bs4.tagsinput;
 
 import com.jwebmp.core.Page;
 import com.jwebmp.core.plugins.PluginInformation;
+import com.jwebmp.core.plugins.PluginStatus;
 import com.jwebmp.core.plugins.jquery.JQueryPageConfigurator;
 import com.jwebmp.core.services.IPageConfigurator;
 
@@ -32,8 +33,8 @@ import jakarta.validation.constraints.NotNull;
  */
 @PluginInformation(pluginName = "Bootstrap Tags Input",
 		pluginDescription = "jQuery plugin providing a Twitter Bootstrap user interface for managing tags",
-		pluginUniqueName = "jwebswing-tags-input",
-		pluginVersion = "2.1.3",
+		pluginUniqueName = "bootstrap-tags-input",
+		pluginVersion = "0.8",
 		pluginCategories = "multi input, text input, tags, , dropdown, bootstrap, ui,web ui, framework",
 		pluginSubtitle = "jQuery plugin providing a Twitter Bootstrap user interface for managing tags",
 		pluginSourceUrl = "https://github.com/bootstrap-tagsinput/bootstrap-tagsinput",
@@ -42,7 +43,12 @@ import jakarta.validation.constraints.NotNull;
 		pluginIconUrl = "",
 		pluginIconImageUrl = "",
 		pluginOriginalHomepage = "https://bootstrap-tagsinput.github.io/bootstrap-tagsinput/examples/",
-		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/BS4TagsInput.jar/download")
+		pluginDownloadUrl = "https://mvnrepository.com/artifact/com.jwebmp.plugins.bootstrap/jwebmp-bootstrap-tags-input4",
+		pluginGroupId = "com.jwebmp.plugins.bootstrap",
+		pluginArtifactId = "jwebmp-bootstrap-tags-input4",
+		pluginModuleName = "com.jwebmp.plugins.bs4.tagsinput",
+		pluginStatus = PluginStatus.Released
+)
 public class BS4TagsInputPageConfigurator
 		implements IPageConfigurator<BS4TagsInputPageConfigurator>
 {

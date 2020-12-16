@@ -33,8 +33,8 @@ import static com.jwebmp.core.utilities.StaticStrings.*;
 public class BS4TagsInputFeature
 		extends Feature<GlobalFeatures, BS4TagsInputOptions, BS4TagsInputFeature>
 {
-
-
+	
+	
 	/*
 	 * Constructs a new BS4TagsInputFeature
 	 */
@@ -42,13 +42,14 @@ public class BS4TagsInputFeature
 	{
 		super("BS4TagsInputFeature", component);
 	}
-
+	
 	@Override
 	protected void assignFunctionsToComponent()
 	{
-		addQuery(getComponent().getJQueryID() + "tagsinput(" + getOptions() + STRING_CLOSING_BRACKET_SEMICOLON + getNewLine());
+		addQuery(getComponent().asBase()
+		                       .getJQueryID() + "tagsinput(" + getOptions() + STRING_CLOSING_BRACKET_SEMICOLON + getNewLine());
 	}
-
+	
 	/**
 	 * Returns the options
 	 *
@@ -63,5 +64,5 @@ public class BS4TagsInputFeature
 		}
 		return super.getOptions();
 	}
-
+	
 }

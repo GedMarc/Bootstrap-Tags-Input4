@@ -30,7 +30,7 @@ import java.util.List;
  * @since 09 Jun 2017
  */
 public class BS4TagsInputOptions
-		extends JavaScriptPart
+		extends JavaScriptPart<BS4TagsInputOptions>
 {
 
 

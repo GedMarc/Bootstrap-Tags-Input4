@@ -31,8 +31,8 @@ import com.jwebmp.core.base.servlets.interfaces.ReferencePool;
 enum BS4TagsInputReferencePool
 		implements ReferencePool
 {
-	BootstrapTagsInput(new JavascriptReference("BS4TagsInput", 2.3, "bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.js"),
-	                   new CSSReference("BS4TagsInput", 2.3, "bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.css"));
+	BootstrapTagsInput(new JavascriptReference("BS4TagsInput", 0.8, "bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.js"),
+	                   new CSSReference("BS4TagsInput", 0.8, "bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.css"));
 	/**
 	 * Any sub data
 	 */

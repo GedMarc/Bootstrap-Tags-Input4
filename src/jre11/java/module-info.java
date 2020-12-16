@@ -1,3 +1,5 @@
+import com.jwebmp.plugins.bs4.tagsinput.implementations.BS4TagsInputInclusionsModule;
+
 module com.jwebmp.plugins.bs4.tagsinput {
 	exports com.jwebmp.plugins.bs4.tagsinput;
 
@@ -11,6 +13,7 @@ module com.jwebmp.plugins.bs4.tagsinput {
 	provides com.jwebmp.core.services.IPageConfigurator with com.jwebmp.plugins.bs4.tagsinput.BS4TagsInputPageConfigurator;
 
 	provides com.guicedee.guicedinjection.interfaces.IGuiceScanModuleExclusions with com.jwebmp.plugins.bs4.tagsinput.implementations.BS4TagsInputExclusionsModule;
-
+	provides com.guicedee.guicedinjection.interfaces.IGuiceScanModuleInclusions with BS4TagsInputInclusionsModule;
+	
 	opens com.jwebmp.plugins.bs4.tagsinput to com.fasterxml.jackson.databind, com.jwebmp.core;
 }
