@@ -23,6 +23,7 @@
 package com.jwebmp.plugins.bootstrap4tagsinput;
 
 import com.jwebmp.core.Page;
+import com.jwebmp.core.base.html.DivSimple;
 import com.jwebmp.plugins.bootstrap4.forms.BSForm;
 import com.jwebmp.plugins.bs4.tagsinput.BS4TagsInput;
 import org.junit.jupiter.api.Test;
@@ -76,13 +77,13 @@ public class BS4TagsInputTest
 	@SuppressWarnings("unchecked")
 	public void testHtml()
 	{
-		Page p = new Page();
+		Page<?> p = new Page();
 		BSForm form = new BSForm();
 		BS4TagsInput bs = new BS4TagsInput();
 		p.getOptions()
 		 .setDynamicRender(false);
 		p.getBody()
-		 .add(form);
+		 .add(new DivSimple<>().add(form));
 		form.add(bs);
 		System.out.println(p.toString(true));
 	}
