@@ -18,6 +18,7 @@
 package com.jwebmp.plugins.bs4.tagsinput;
 
 import com.jwebmp.core.Page;
+import com.jwebmp.core.base.angular.services.annotations.*;
 import com.jwebmp.core.plugins.PluginInformation;
 import com.jwebmp.core.plugins.PluginStatus;
 import com.jwebmp.core.plugins.jquery.JQueryPageConfigurator;
@@ -49,6 +50,7 @@ import jakarta.validation.constraints.NotNull;
 		pluginModuleName = "com.jwebmp.plugins.bs4.tagsinput",
 		pluginStatus = PluginStatus.Released
 )
+@TsDependency(value = "bootstrap-tagsinput",version = "^0.7.1")
 public class BS4TagsInputPageConfigurator
 		implements IPageConfigurator<BS4TagsInputPageConfigurator>
 {
